@@ -1,0 +1,23 @@
+body {
+	margin: 0;
+	background-color: #2d2d2d;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: white;
+	font-family: 'DM Serif Display', serif;
+	min-height: 95vh;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #ffd000;
+}

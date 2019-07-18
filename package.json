@@ -1,0 +1,38 @@
+{
+	"name": "sharperv2",
+	"version": "1.0.0",
+	"description": "updated sharper website",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node server.js",
+		"server": "nodemon server.js",
+		"client": "npm start --prefix client",
+		"dev": "concurrently \"npm run server\" \"npm run client\""
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/joehbenti/sharperv2.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/joehbenti/sharperv2/issues"
+	},
+	"homepage": "https://github.com/joehbenti/sharperv2#readme",
+	"dependencies": {
+		"body-parser": "^1.19.0",
+		"bootstrap": "^4.3.1",
+		"concurrently": "^4.1.1",
+		"cors": "^2.8.5",
+		"express": "^4.17.1",
+		"mongoose": "^5.6.4",
+		"react-router": "^5.0.1",
+		"react-router-dom": "^5.0.1",
+		"styled-components": "^4.3.2"
+	},
+	"devDependencies": {
+		"nodemon": "^1.19.1"
+	}
+}

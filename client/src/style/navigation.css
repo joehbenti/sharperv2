@@ -1,10 +1,10 @@
-.navbar {
-	display: block;
-}
-
-.brand-name {
+.brand-name,
+.navbar-light .navbar-nav .nav-link {
 	font-size: 1.5em;
 	color: white;
-	padding-left: 10px;
-	margin-top: 50px;
 }
+
+.custom-body {
+	min-height: 95vh;
+}
+

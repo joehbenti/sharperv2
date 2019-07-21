@@ -29,8 +29,7 @@ class Home extends Component {
 		const meBg = {
 			backgroundImage: `url(${Feature_image})`,
 			backgroundRepeat: 'no-repeat',
-			backgroundPosition: 'right',
-			backgroundBlendMode: 'multiply',
+			backgroundPosition: 'right center',
 			backgroundSize: 'contain',
 			stroke: '#FFD000',
 			marginBottom: '20px'
@@ -42,8 +41,8 @@ class Home extends Component {
 					<Row>
 						<Col lg='7'>
 							<h1 style={h1Style}>
-								Front-End Developer & <br />
-								Brand Consultant
+								Front-End Developer <br /> & Brand Consultant
+								
 							</h1>
 							<br />
 							<br />

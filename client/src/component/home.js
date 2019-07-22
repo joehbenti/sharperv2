@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../style/home.css';
+
 import Feature_image from '../img/me.png';
 
 import Row from 'react-bootstrap/Row';

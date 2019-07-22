@@ -42,3 +42,27 @@ a:hover {
 	color: #ffd000;
 	text-decoration: none;
 }
+
+.aboutMe-mainImage {
+	background-image: url(../img/mella.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 100%;
+	width: 100%;
+	filter: grayscale(1);
+	cursor: url('../img/logo.png'), auto !important;
+	-webkit-box-shadow: 0px 14px 55px -44px rgba(255, 208, 0, 1);
+	-moz-box-shadow: 0px 14px 55px -44px rgba(255, 208, 0, 1);
+	box-shadow: 0px 14px 55px -44px rgba(255, 208, 0, 1);
+}
+
+.aboutMe-mainImage:hover {
+	filter: grayscale(0);
+	transform: scale(1.05);
+	border: 20px solid #ffd000;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}

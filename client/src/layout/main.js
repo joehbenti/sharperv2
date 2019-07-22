@@ -13,9 +13,6 @@ import About from '../component/about';
 
 export default class Main extends Component {
 	render() {
-		const mainTitle ={
-			color: '#ffd000'
-		}
 		return (
 			<React.Fragment>
 				<div className='container-fluid custom-body'>

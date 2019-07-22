@@ -9,6 +9,7 @@ import '../style/navigation.css';
 import Home from '../component/home';
 import Footer from '../component/footer';
 import Contact from '../component/contact';
+import About from '../component/about';
 
 export default class Main extends Component {
 	render() {
@@ -32,7 +33,7 @@ export default class Main extends Component {
 							<Navbar.Toggle aria-controls='basic-navbar-nav' />
 							<Navbar.Collapse className='justify-content-end'>
 								<Nav>
-									<Link to='/service' className='nav nav-link'>
+									<Link to='/about' className='nav nav-link'>
 										About
 									</Link>
 
@@ -57,8 +58,8 @@ export default class Main extends Component {
 						<Switch>
 							<Route exact path='/' component={Home} />
 							<Route path='/contact' component={Contact} />
-							{/* <Route path='/work' component={Service} />
-						<Route path='/contact' component={Mentor} />
+							<Route path='/about' component={About} />
+							{/* <Route path='/contact' component={Mentor} />
 						<Route component={NotFound} /> */}
 						</Switch>
 					</Router>

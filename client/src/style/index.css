@@ -20,3 +20,15 @@ h5,
 h6 {
 	color: #ffd000;
 }
+
+.company img {
+	filter: grayscale(1);
+}
+
+.company img:hover {
+	filter: grayscale(0);
+}
+
+.company-images {
+	padding: 0;
+}

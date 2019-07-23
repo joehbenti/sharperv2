@@ -4,7 +4,6 @@ import { Row, Col } from 'react-bootstrap';
 // import Link from 'react-router-dom/Link';
 
 import Company from './companys';
-import Me from '../img/mella.jpg';
 
 export default class About extends Component {
 	render() {

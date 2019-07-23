@@ -10,6 +10,7 @@ import Home from '../component/home';
 import Footer from '../component/footer';
 import Contact from '../component/contact';
 import About from '../component/about';
+import Work from '../component/work';
 
 export default class Main extends Component {
 	render() {
@@ -59,8 +60,8 @@ export default class Main extends Component {
 							<Route exact path='/' component={Home} />
 							<Route path='/contact' component={Contact} />
 							<Route path='/about' component={About} />
-							{/* <Route path='/contact' component={Mentor} />
-						<Route component={NotFound} /> */}
+							<Route path='/work' component={Work} />
+						{/* <Route component={NotFound} /> */}
 						</Switch>
 					</Router>
 				</div>

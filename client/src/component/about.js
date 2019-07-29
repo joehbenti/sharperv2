@@ -44,7 +44,7 @@ export default class About extends Component {
 								<span style={mainText}> UI/UX designer</span> at Kifiya
 								Financial Technology living and working out of Addis Ababa,
 								Ethiopia. Currently I am working on a{' '}
-								<span style={mainText}>first-its-kind e-commerce </span>
+								<span style={mainText}>first-of-its-kind e-commerce </span>
 								and payment solution, guiding the team on delivering an
 								exceptional digital product. <br />
 								<br />I am passionate to create an unforgettable experience
@@ -52,8 +52,8 @@ export default class About extends Component {
 								<span style={mainText}>GREAT EXPERIENCE</span>
 								<br />
 								<br />
-								When I am not developing exceptional experiences, I am usually @
-								the <span style={mainText}>gym & reading.</span>
+								When I am not developing exceptional experiences, <br />I am
+								usually @ the <span style={mainText}>gym & reading.</span>
 							</h3>
 						</Col>
 						<Col lg='6'>

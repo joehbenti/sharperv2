@@ -4,6 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
 import Logo from '../img/logo.png';
+import Resume from '../img/Resume.pdf';
 import '../style/navigation.css';
 
 import Home from '../component/home';
@@ -46,7 +47,7 @@ export default class Main extends Component {
 										Contact
 									</Link>
 									<a
-										href={Logo}
+										href={Resume}
 										target='_blank'
 										rel='noopener noreferrer'
 										className='nav nav-link'
@@ -61,7 +62,7 @@ export default class Main extends Component {
 							<Route path='/contact' component={Contact} />
 							<Route path='/about' component={About} />
 							<Route path='/work' component={Work} />
-						{/* <Route component={NotFound} /> */}
+							{/* <Route component={NotFound} /> */}
 						</Switch>
 					</Router>
 				</div>

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import '../style/home.css';
 
-import Feature_image from '../img/me.png';
+// import Feature_image from '../img/me.png';
 
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';

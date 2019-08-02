@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-// import ReactMarkdown from 'react-markdown';
-
-// import { marked } from 'marked';
-
-// import * as fs from 'fs';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+// import LtvProject from '../component/projects/ltv';
 
 export default class Work extends Component {
 	render() {
@@ -36,28 +33,29 @@ export default class Work extends Component {
 		return (
 			<div className='work-mian-container'>
 				<div className='work-project'>
-					<div className='work-relative-container'>
+					<div className='work-relative-container ltv-img'>
 						<div>
 							<h1>LTV Branding</h1>
+							<Link to='/work/ltv'>View Project</Link>
 						</div>
 					</div>
 				</div>
 				<div className='work-project'>
-					<div className='work-relative-container'>
+					<div className='work-relative-container mela-img'>
 						<div>
 							<h1>Mela: Remit to Pay </h1>
 						</div>
 					</div>
 				</div>
 				<div className='work-project'>
-					<div className='work-relative-container onekoo'>
+					<div className='work-relative-container '>
 						<div>
 							<h1>Onekoo Coffee</h1>
 						</div>
 					</div>
 				</div>
 				<div className='work-project'>
-					<div className='work-relative-container'>
+					<div className='work-relative-container redcrossApp-img'>
 						<div>
 							<h1>Ethiopia Red Cross Society Android App</h1>
 						</div>

@@ -17,6 +17,6 @@ const db = require('./config/keys').mongoURI;
 mongoose
 	.connect(db, { useNewUrlParser: true })
 	.then(() => console.log('Mongo DB Connected'))
-    .catch(err => console.log(err));
-    
-    
+	.catch(err => console.log(err));
+
+app.listen(port, () => console.log(`Server Started On Port ${port}`));

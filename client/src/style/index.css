@@ -131,12 +131,23 @@ a:hover {
 	margin-bottom: 20px;
 }
 
+/* project images here. */
 .onekoo {
 	background-image: url('../img/projects/onekoo.png');
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+
+.ltv-img {
+}
+
+.mela-img {
+}
+
+.redcrossApp-img {
+}
+/* End: project images here  */
 
 @media (min-width: 768px) and (max-width: 1029px) {
 	.work-project {

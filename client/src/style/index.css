@@ -105,6 +105,12 @@ a:hover {
 	background-color: #ffd000;
 }
 
+.work-project:hover > div > div {
+	background-color: #ffd000;
+	min-width: 100%;
+	padding: 10px;
+}
+
 .work-project:hover h1 {
 	color: #2d2d2d;
 }
@@ -122,6 +128,10 @@ a:hover {
 	z-index: 100;
 }
 
+.work-mian-container > div:hover {
+	background-color: #ffd000;
+}
+
 .mebg {
 	background-image: url('../img/me.png');
 	background-repeat: no-repeat;
@@ -129,6 +139,16 @@ a:hover {
 	background-size: contain;
 	stroke: #ffd000;
 	margin-bottom: 20px;
+}
+
+.social-media span {
+	padding: 4px;
+	/* display: inline;     */
+}
+
+.project-icons {
+	color: white !important;
+	margin-bottom: 30px;
 }
 
 /* project images here. */
@@ -140,9 +160,19 @@ a:hover {
 }
 
 .ltv-img {
+	background-image: url('../img/projects/ltv.png');
+	background-position: center;
+	background-size: auto;
+
+	background-repeat: no-repeat;
 }
 
 .mela-img {
+	background-image: url('../img/projects/melapay.png');
+	background-position: center;
+	background-size: cover;
+
+	background-repeat: no-repeat;
 }
 
 .redcrossApp-img {

@@ -16,6 +16,7 @@ export default class Work extends Component {
 								className='project-icons'
 							/>
 							<h1>LTV </h1>
+
 							<a href='/projects/ltv.html'>View Project</a>
 						</div>
 					</div>
@@ -49,7 +50,7 @@ export default class Work extends Component {
 					</div>
 				</div>
 				<div className='work-project'>
-					<div className='work-relative-container redcrossApp-img'>
+					<div className='work-relative-container stgiorgis-img'>
 						<div>
 							<img
 								src='https://image.flaticon.com/icons/svg/977/977411.svg'
@@ -57,7 +58,7 @@ export default class Work extends Component {
 								width='50px'
 								className='project-icons'
 							/>
-							<h1>Ethiopian Red Cross</h1>
+							<h1>St. Giorgis FC </h1>
 							<a href='/projects/redCross.html'>View Project</a>
 						</div>
 					</div>

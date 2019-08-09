@@ -96,24 +96,16 @@ a:hover {
 	min-height: 83vh;
 	min-width: 25%;
 	max-width: 50%;
-	border: 1px solid white;
-	padding: 20px;
-	margin-right: 15px;
+	border: 0.01em solid #ffd000;
+	background-color: #2d2d2d;
+	padding: 30px;
+	/* margin: 20px; */
+	margin-right: 20px;
 }
 
-.work-project:hover {
+/* .work-project:hover {
 	background-color: #ffd000;
-}
-
-.work-project:hover > div > div {
-	background-color: #ffd000;
-	min-width: 100%;
-	padding: 10px;
-}
-
-.work-project:hover h1 {
-	color: #2d2d2d;
-}
+} */
 
 .work-relative-container {
 	position: relative;
@@ -128,12 +120,15 @@ a:hover {
 	z-index: 100;
 }
 
-.work-mian-container > div:hover {
-	background-color: #ffd000;
+.work-mian-container > div > div {
+	transition: transform 1s;
+}
+.work-mian-container > div > div:hover {
+	transform: scale(1.05);
 }
 
 .mebg {
-	background-image: url('../img/me.png');
+	background-image: url('../img/me2.png');
 	background-repeat: no-repeat;
 	background-position: right center;
 	background-size: contain;
@@ -155,14 +150,14 @@ a:hover {
 .onekoo {
 	background-image: url('../img/projects/onekoo.png');
 	background-position: center;
-	background-size: cover;
+	background-size: contain;
 	background-repeat: no-repeat;
 }
 
 .ltv-img {
 	background-image: url('../img/projects/ltv.png');
 	background-position: center;
-	background-size: auto;
+	background-size: contain;
 
 	background-repeat: no-repeat;
 }
@@ -170,12 +165,15 @@ a:hover {
 .mela-img {
 	background-image: url('../img/projects/melapay.png');
 	background-position: center;
-	background-size: cover;
-
+	background-size: contain;
 	background-repeat: no-repeat;
 }
 
-.redcrossApp-img {
+.stgiorgis-img {
+	background-image: url('../img/projects/giorgis.png');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 /* End: project images here  */
 

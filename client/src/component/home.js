@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import '../style/home.css';
 
+import { bounceInLeft } from 'react-animations';
+import styled, { keyframes } from 'styled-components';
+
 // import Feature_image from '../img/me.png';
 
 import Row from 'react-bootstrap/Row';
@@ -41,38 +44,51 @@ class Home extends Component {
 		// 	display:
 		// }
 
+		const BounceLeft = styled.div`
+			animation: 1.5s ${keyframes`${bounceInLeft}`};
+		`;
+
+		const BounceService = styled.div`
+			animation: 2s ${keyframes`${bounceInLeft}`};
+		`;
+
 		return (
 			<div className='mebg'>
 				<div className='parent-container'>
-					<Row>
-						<Col lg='7'>
-							<h1 style={h1Style}>
-								Front-End Developer <br /> & Brand Consultant
-							</h1>
-							<br />
-							<br />
-							<h3 style={h3Style}>
-								I am a self-thought{' '}
-								<span style={mainText}>multi-disciplinary</span> designer with a
-								focus for <span style={mainText}>human centered design.</span>{' '}
-							</h3>
-							<div>
-								<h3>Services</h3>
-								<p>
-									<ul style={listStyle}>
-										<li>Website Dev, Android Dev, Consulting & Branding</li>
-									</ul>
-								</p>
-							</div>
-							<div style={paddingDiv}>
-								<Button variant='outline-warning' size='lg'>
-									<Link to='/contact' className='contactLink'>
-										Let's work together
-									</Link>
-								</Button>
-							</div>
-						</Col>
-					</Row>
+					<BounceLeft>
+						<Row>
+							<Col lg='7'>
+								<h1 style={h1Style}>
+									Front-End Developer <br /> & Brand Consultant
+								</h1>
+								<br />
+								<br />
+								<h3 style={h3Style}>
+									I am a self-thought{' '}
+									<span style={mainText}>multi-disciplinary</span> designer with
+									a focus for{' '}
+									<span style={mainText}>human centered design.</span>{' '}
+								</h3>
+								<div>
+									<h3>Services</h3>
+									<BounceService>
+										<p>
+											<ul style={listStyle}>
+												<li>Website Dev, Android Dev, Consulting & Branding</li>
+											</ul>
+										</p>
+									</BounceService>
+								</div>
+								<div style={paddingDiv}>
+									<Button variant='outline-warning' size='lg'>
+										<Link to='/contact' className='contactLink'>
+											Let's work together
+										</Link>
+									</Button>
+								</div>
+							</Col>
+						</Row>
+					</BounceLeft>
 				</div>
 			</div>
 		);

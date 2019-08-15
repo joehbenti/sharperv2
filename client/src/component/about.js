@@ -13,7 +13,7 @@ export default class About extends Component {
 		};
 
 		const h1Style = {
-			fontSize: '4em'
+			fontSize: '3em'
 		};
 
 		const h3Style = {

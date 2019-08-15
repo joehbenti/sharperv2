@@ -11,13 +11,14 @@ import Button from 'react-bootstrap/Button';
 class Home extends Component {
 	render() {
 		const h1Style = {
-			fontSize: '5em'
+			fontSize: '4em'
 		};
 
 		const h3Style = {
 			fontFamily: 'Quicksand',
 			fontSize: '3em',
-			color: '#707070'
+			color: '#707070',
+			marginBottom: '60px'
 		};
 
 		const mainText = {
@@ -25,8 +26,20 @@ class Home extends Component {
 		};
 
 		const paddingDiv = {
-			marginTop: '100px'
+			marginTop: '50px'
 		};
+
+		const listStyle = {
+			listStyle: 'none',
+			display: 'inline-block',
+			color: '#707070',
+			fontSize: '1.5em',
+			paddingLeft: '0'
+		};
+
+		// const liStyle = {
+		// 	display:
+		// }
 
 		return (
 			<div className='mebg'>
@@ -41,9 +54,16 @@ class Home extends Component {
 							<h3 style={h3Style}>
 								I am a self-thought{' '}
 								<span style={mainText}>multi-disciplinary</span> designer with a
-								focus on <span style={mainText}>human centered design</span>{' '}
-								both digitally and in the real world.
+								focus for <span style={mainText}>human centered design.</span>{' '}
 							</h3>
+							<div>
+								<h3>Services</h3>
+								<p>
+									<ul style={listStyle}>
+										<li>Website Dev, Android Dev, Consulting & Branding</li>
+									</ul>
+								</p>
+							</div>
 							<div style={paddingDiv}>
 								<Button variant='outline-warning' size='lg'>
 									<Link to='/contact' className='contactLink'>

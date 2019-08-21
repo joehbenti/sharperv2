@@ -5,6 +5,13 @@ import { Row, Col } from 'react-bootstrap';
 
 import Company from './companys';
 
+import AdobeXD from '../img/designStack/adobeXD.png';
+import AndroidStudio from '../img/designStack/androidStudio.png';
+import Illustrator from '../img/designStack/illustrator.png';
+import Indesign from '../img/designStack/indesign.png';
+import Intellij from '../img/designStack/intellij.png';
+import Vscode from '../img/designStack/vsCode.png';
+
 export default class About extends Component {
 	render() {
 		const padding = {
@@ -13,13 +20,15 @@ export default class About extends Component {
 		};
 
 		const h1Style = {
-			fontSize: '3em'
+			fontSize: '3em',
+			display: 'inline-block'
 		};
 
 		const h3Style = {
 			fontFamily: 'Quicksand',
 			fontSize: '2.5em',
-			color: '#707070'
+			color: '#707070',
+			cursor: 'context-menu'
 		};
 
 		const mainText = {
@@ -27,34 +36,43 @@ export default class About extends Component {
 		};
 
 		const marginBottom = {
-			marginBottom: '10%'
+			marginBottom: '6%'
 		};
 
 		return (
 			<div style={padding}>
 				<div style={marginBottom}>
+					<h1 style={h1Style}>Selam, Akaam Jirtu, Greetings</h1>
+					<div className='float-right'>
+						<button type='button ' className='btn-primary btn-lg'>
+							TOOLS I USE
+						</button>
+						<button type='button ' className='btn-primary btn-lg'>
+							DESIGN AND TECH STACK
+						</button>
+					</div>
+					<br />
+					<br />
 					<Row>
 						<Col lg='6'>
-							<h1 style={h1Style}>Hi There</h1>
-
-							<br />
-							<br />
-							<h3 style={h3Style}>
-								I am a self-motivated self learning full-time{' '}
-								<span style={mainText}> UI/UX designer</span> at Kifiya
-								Financial Technology living and working out of Addis Ababa,
-								Ethiopia. Currently I am working on a{' '}
-								<span style={mainText}>first-of-its-kind e-commerce </span>
-								and payment solution, guiding the team on delivering an
-								exceptional digital product. <br />
-								<br />I am passionate to create an unforgettable experience
-								digitally and in real life; after all that’s what life is. -{' '}
-								<span style={mainText}>GREAT EXPERIENCE</span>
-								<br />
-								<br />
-								When I am not developing exceptional experiences, <br />I am
-								usually @ the <span style={mainText}>gym & reading.</span>
-							</h3>
+							<div>
+								<h3 style={h3Style}>
+									I am a self-motivated self-thought full-time{' '}
+									<span style={mainText}> UI/UX designer</span> at Kifiya
+									Financial Technology living and working out of Addis Ababa,
+									Ethiopia. Currently I am working on a{' '}
+									<span style={mainText}>first-of-its-kind e-commerce </span>
+									and <span style={mainText}>payment solution,</span> guiding
+									the team on delivering an exceptional digital product. <br />
+									<br />I am passionate to create an unforgettable experience
+									digitally and in real life; after all that’s what life is. -{' '}
+									<span style={mainText}>GREAT EXPERIENCE</span>
+									<br />
+									<br />
+									When I am not developing experiences, <br />I am usually @ the{' '}
+									<span style={mainText}>gym & reading.</span>
+								</h3>
+							</div>
 						</Col>
 						<Col lg='6'>
 							<div className='aboutMe-mainImage' />
@@ -71,17 +89,35 @@ export default class About extends Component {
 				</div>
 
 				<div style={marginBottom}>
-					<Row>
-						<Col lg='6'>
-							<h1 style={h1Style}>Tech Stack</h1>
+					{/* <Row>
+						<Col lg='6' className='company'>
+							<h1 style={h1Style}>Tools</h1>
 
-							<br />
-							<br />
+							<Row>
+								<Col lg='3' md='2' sm='3' xs='3' className='company-images'>
+									<img src={AdobeXD} alt='ltv' width='100%' />
+								</Col>
+								<Col lg='3' md='2' sm='3' xs='3' className='company-images'>
+									<img src={AndroidStudio} alt='ltv' width='100%' />
+								</Col>
+								<Col lg='3' md='2' sm='3' xs='3' className='company-images'>
+									<img src={Illustrator} alt='ltv' width='100%' />
+								</Col>
+								<Col lg='3' md='2' sm='3' xs='3' className='company-images'>
+									<img src={Intellij} alt='ltv' width='100%' />
+								</Col>
+								<Col lg='3' md='2' sm='3' xs='3' className='company-images'>
+									<img src={Vscode} alt='ltv' width='100%' />
+								</Col>
+								<Col lg='3' md='2' sm='3' xs='3' className='company-images'>
+									<img src={Indesign} alt='ltv' width='100%' />
+								</Col>
+							</Row>
 						</Col>
 						<Col lg='6'>
-							<h1 style={h1Style}>Design Stack</h1>
+							<h1 style={h1Style}>Tech/Design Stack</h1>
 						</Col>
-					</Row>
+					</Row> */}
 				</div>
 			</div>
 		);

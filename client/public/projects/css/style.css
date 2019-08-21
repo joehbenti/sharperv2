@@ -28,6 +28,14 @@ body {
 	margin-bottom: 30px;
 }
 
+.project-details p {
+	font-family: 'Quicksand', sans-serif;
+}
+
+.project-details h4 {
+	margin: 30px 0px;
+}
+
 .space-divs {
 	margin-bottom: 50px;
 }

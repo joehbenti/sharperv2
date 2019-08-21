@@ -40,7 +40,7 @@ export default class Work extends Component {
 						<div>
 							<img
 								src='https://image.flaticon.com/icons/svg/679/679720.svg'
-								alt='Front-End Development'
+								alt='Branding, Packaging Design'
 								width='50px'
 								className='project-icons'
 							/>

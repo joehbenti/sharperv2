@@ -101,6 +101,7 @@ a:hover {
 	padding: 30px;
 	/* margin: 20px; */
 	margin-right: 20px;
+	background-color: #464646;
 }
 
 /* .work-project:hover {
@@ -120,10 +121,14 @@ a:hover {
 	z-index: 100;
 }
 
-.work-mian-container > div > div {
+.work-relative-container > h1 {
+	color: #2d2d2d;
+}
+
+.work-mian-container > div {
 	transition: transform 1s;
 }
-.work-mian-container > div > div:hover {
+.work-mian-container > div:hover {
 	transform: scale(1.05);
 }
 

@@ -25,7 +25,8 @@ class Home extends Component {
 		};
 
 		const mainText = {
-			color: '#FFD000'
+			color: '#FFD000',
+			fontFamily: 'Indie Flower'
 		};
 
 		const paddingDiv = {

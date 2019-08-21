@@ -19,7 +19,7 @@ class Footer extends Component {
 					<Col>
 						<DropdownButton
 							variant='outline-secondary'
-							title='Website Version'
+							title='Website Versions'
 							id='input-group-dropdown-1'
 						>
 							<Dropdown.Item

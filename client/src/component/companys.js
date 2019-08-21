@@ -21,13 +21,13 @@ export default class companys extends Component {
 			// for listing companys i have worked with
 			<React.Fragment>
 				<Row className='company'>
-					<Col lg='2' md='2' sm='3' xs='3' className='company-images'>
+					<Col lg='2' md='2' sm='4' xs='6' className='company-images'>
 						<img src={ltv} alt='ltv' width='100%' />
 					</Col>
-					<Col lg='2' md='2' sm='3' xs='3' className='company-images'>
+					<Col lg='2' md='2' sm='4' xs='6' className='company-images'>
 						<img src={cbo} alt='Cooperative Bank of Oromia' width='100%' />
 					</Col>
-					<Col lg='2' md='2' sm='3' xs='3' className='company-images'>
+					<Col lg='2' md='2' sm='4' xs='6' className='company-images'>
 						<a href={'//' + 'www.kifiya.com'} target='_blanck'>
 							<img
 								src={kifiya}
@@ -36,13 +36,13 @@ export default class companys extends Component {
 							/>
 						</a>
 					</Col>
-					<Col lg='2' md='2' sm='3' xs='3' className='company-images'>
+					<Col lg='2' md='2' sm='4' xs='6' className='company-images'>
 						<img src={stgeorge} alt='St Giogis FC' width='100%' />
 					</Col>
-					<Col lg='2' md='2' sm='3' xs='3' className='company-images'>
+					<Col lg='2' md='2' sm='4' xs='6' className='company-images'>
 						<img src={redcross} alt='Ethiopia Red Cross' width='100%' />
 					</Col>
-					<Col lg='2' md='2' sm='3' xs='3' className='company-images'>
+					<Col lg='2' md='2' sm='4' xs='6' className='company-images'>
 						<a href={'//' + 'www.education4devt.com'} target='_blanck'>
 							<img
 								src={efda}
@@ -51,18 +51,18 @@ export default class companys extends Component {
 							/>
 						</a>
 					</Col>
-					<Col lg='2' md='2' sm='3' xs='3' className='company-images'>
+					<Col lg='2' md='2' sm='4' xs='6' className='company-images'>
 						<a href={'//' + 'www.oromiacoffeeunion.org.com'} target='_blanck'>
 							<img src={ocfcu} alt='Oromia coffee farmers union' width='100%' />
 						</a>
 					</Col>
-					<Col lg='2' md='2' sm='3' xs='3' className='company-images'>
+					<Col lg='2' md='2' sm='4' xs='6' className='company-images'>
 						<img src={psi} alt='PSI' width='100%' />
 					</Col>
-					<Col lg='2' md='2' sm='3' xs='3' className='company-images'>
+					<Col lg='2' md='2' sm='4' xs='6' className='company-images'>
 						<img src={bonna} alt='Bonna Coffee' width='100%' />
 					</Col>
-					<Col lg='2' md='2' sm='3' xs='3' className='company-images'>
+					<Col lg='2' md='2' sm='4' xs='6' className='company-images'>
 						<a
 							href={'//' + 'www.oromiacoffeeunion.org/onekoo-coffee.com'}
 							target='_blanck'

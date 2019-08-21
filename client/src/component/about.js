@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Button, Modal } from 'react-bootstrap';
 // import Link from 'react-router-dom/Link';
 
 import Company from './companys';
 
-import AdobeXD from '../img/designStack/adobeXD.png';
-import AndroidStudio from '../img/designStack/androidStudio.png';
-import Illustrator from '../img/designStack/illustrator.png';
-import Indesign from '../img/designStack/indesign.png';
-import Intellij from '../img/designStack/intellij.png';
-import Vscode from '../img/designStack/vsCode.png';
+// import AdobeXD from '../img/designStack/adobeXD.png';
+// import AndroidStudio from '../img/designStack/androidStudio.png';
+// import Illustrator from '../img/designStack/illustrator.png';
+// import Indesign from '../img/designStack/indesign.png';
+// import Intellij from '../img/designStack/intellij.png';
+// import Vscode from '../img/designStack/vsCode.png';
 
 export default class About extends Component {
 	render() {
@@ -32,24 +32,43 @@ export default class About extends Component {
 		};
 
 		const mainText = {
-			color: '#FFD000'
+			color: '#FFD000',
+			fontFamily: 'Indie Flower'
 		};
 
 		const marginBottom = {
 			marginBottom: '6%'
 		};
+		const marginBtn = {
+			marginRight: '10px'
+		};
 
 		return (
 			<div style={padding}>
+				<Modal
+					// {...props}
+					size='lg'
+					aria-labelledby='contained-modal-title-vcenter'
+					centered
+				>
+					<Modal.Body>
+						<h4>Logos Here</h4>
+					</Modal.Body>
+				</Modal>
 				<div style={marginBottom}>
 					<h1 style={h1Style}>Selam, Akaam Jirtu, Greetings</h1>
 					<div className='float-right'>
-						<button type='button ' className='btn-primary btn-lg'>
-							TOOLS I USE
-						</button>
-						<button type='button ' className='btn-primary btn-lg'>
-							DESIGN AND TECH STACK
-						</button>
+						<Button
+							variant='outline-light'
+							size='lg'
+							style={marginBtn}
+							onClick={''}
+						>
+							Tools I use
+						</Button>
+						<Button variant='outline-light' size='lg' onClick={''}>
+							Design/Tech Stack
+						</Button>
 					</div>
 					<br />
 					<br />

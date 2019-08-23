@@ -96,7 +96,7 @@ a:hover {
 	min-height: 83vh;
 	min-width: 25%;
 	max-width: 50%;
-	border: 0.01em solid #ffd000;
+	/* border: 0.01em solid #ffd000; */
 	background-color: #2d2d2d;
 	padding: 30px;
 	/* margin: 20px; */
@@ -182,6 +182,20 @@ a:hover {
 }
 /* End: project images here  */
 
+.navbar-light .navbar-toggler {
+	/* color: #ffd000 !important; */
+	background-color: #ffd000;
+}
+
+.modal.show .modal-dialog {
+	width: 100%;
+}
+
+.modal-content {
+	background-color: #ffffff00;
+	text-align: center;
+}
+
 @media (min-width: 768px) and (max-width: 1029px) {
 	.work-project {
 		min-width: 60%;
@@ -202,6 +216,9 @@ a:hover {
 }
 
 @media (min-width: 317px) and (max-width: 424px) {
+	.about-tools {
+		margin-bottom: 50px;
+	}
 	.work-project {
 		min-width: 90%;
 	}

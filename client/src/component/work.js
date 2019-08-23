@@ -59,7 +59,7 @@ export default class Work extends Component {
 						/>
 						<div>
 							<h1>St. Giorgis FC </h1>
-							<a href='/projects/redCross.html'>View Project</a>
+							<a href='/projects/girogis.html'>View Project</a>
 						</div>
 					</div>
 				</div>

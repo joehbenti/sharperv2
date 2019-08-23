@@ -5,14 +5,22 @@ import { Row, Col, Button, Modal } from 'react-bootstrap';
 
 import Company from './companys';
 
-// import AdobeXD from '../img/designStack/adobeXD.png';
-// import AndroidStudio from '../img/designStack/androidStudio.png';
-// import Illustrator from '../img/designStack/illustrator.png';
-// import Indesign from '../img/designStack/indesign.png';
-// import Intellij from '../img/designStack/intellij.png';
-// import Vscode from '../img/designStack/vsCode.png';
+import AdobeXD from '../img/designStack/adobeXD.png';
+import AndroidStudio from '../img/designStack/androidStudio.png';
+import Illustrator from '../img/designStack/illustrator.png';
+import Indesign from '../img/designStack/indesign.png';
+import Intellij from '../img/designStack/intellij.png';
+import Vscode from '../img/designStack/vsCode.png';
 
 export default class About extends Component {
+	constructor() {
+		super();
+		this.state = {
+			toolsModal: false,
+			techStackModal: false
+		};
+	}
+
 	render() {
 		const padding = {
 			padding: '20px',
@@ -43,6 +51,16 @@ export default class About extends Component {
 			marginRight: '10px'
 		};
 
+		const tools = () => {
+			this.setState({ toolsModal: true });
+		};
+
+		const techstack = () => {
+			this.setState({ techStackModal: true });
+		};
+
+		const toolsCloseModal = () => this.setState({ toolsModal: false });
+		const techStackCloseModal = () => this.setState({ techStackModal: false });
 		return (
 			<div style={padding}>
 				<Modal
@@ -50,25 +68,81 @@ export default class About extends Component {
 					size='lg'
 					aria-labelledby='contained-modal-title-vcenter'
 					centered
+					show={this.state.toolsModal}
+					onHide={toolsCloseModal}
+					className='fullscreen-modal'
 				>
 					<Modal.Body>
-						<h4>Logos Here</h4>
+						<Row>
+							<Col lg='4' md='4' sm='4' xs='4' className='company-images'>
+								<img src={AdobeXD} alt='ltv' width='100%' />
+							</Col>
+							<Col lg='4' md='4' sm='4' xs='4' className='company-images'>
+								<img src={AndroidStudio} alt='ltv' width='100%' />
+							</Col>
+							<Col lg='4' md='4' sm='4' xs='4' className='company-images'>
+								<img src={Illustrator} alt='ltv' width='100%' />
+							</Col>
+							<Col lg='4' md='4' sm='4' xs='4' className='company-images'>
+								<img src={Intellij} alt='ltv' width='100%' />
+							</Col>
+							<Col lg='4' md='4' sm='4' xs='4' className='company-images'>
+								<img src={Vscode} alt='ltv' width='100%' />
+							</Col>
+							<Col lg='4' md='4' sm='4' xs='4' className='company-images'>
+								<img src={Indesign} alt='ltv' width='100%' />
+							</Col>
+						</Row>
+					</Modal.Body>
+				</Modal>
+				<Modal
+					// {...props}
+					size='lg'
+					aria-labelledby='contained-modal-title-vcenter'
+					centered
+					show={this.state.techStackModal}
+					onHide={techStackCloseModal}
+					className='fullscreen-modal'
+				>
+					<Modal.Body>
+						<Row>
+							<Col lg='4' md='4' sm='4' xs='4' className='company-images'>
+								<img src={AdobeXD} alt='ltv' width='100%' />
+							</Col>
+							<Col lg='4' md='4' sm='4' xs='4' className='company-images'>
+								<img src={AndroidStudio} alt='ltv' width='100%' />
+							</Col>
+							<Col lg='4' md='4' sm='4' xs='4' className='company-images'>
+								<img src={Illustrator} alt='ltv' width='100%' />
+							</Col>
+							<Col lg='4' md='4' sm='4' xs='4' className='company-images'>
+								<img src={Intellij} alt='ltv' width='100%' />
+							</Col>
+							<Col lg='4' md='4' sm='4' xs='4' className='company-images'>
+								<img src={Vscode} alt='ltv' width='100%' />
+							</Col>
+							<Col lg='4' md='4' sm='4' xs='4' className='company-images'>
+								<img src={Indesign} alt='ltv' width='100%' />
+							</Col>
+						</Row>
 					</Modal.Body>
 				</Modal>
 				<div style={marginBottom}>
-					<h1 style={h1Style}>Selam, Akaam Jirtu, Greetings</h1>
-					<div className='float-right'>
-						<Button
-							variant='outline-light'
-							size='lg'
-							style={marginBtn}
-							onClick={''}
-						>
-							Tools I use
-						</Button>
-						<Button variant='outline-light' size='lg' onClick={''}>
-							Design/Tech Stack
-						</Button>
+					<div className='about-tools'>
+						<h1 style={h1Style}>Selam, Akaam Jirtu, Greetings</h1>
+						<div className='float-right float-xs-left'>
+							<Button
+								variant='outline-light'
+								size='lg'
+								style={marginBtn}
+								onClick={tools}
+							>
+								Tools I use
+							</Button>
+							<Button variant='outline-light' size='lg' onClick={techstack}>
+								Design/Tech Stack
+							</Button>
+						</div>
 					</div>
 					<br />
 					<br />

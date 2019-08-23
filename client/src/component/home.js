@@ -7,9 +7,7 @@ import styled, { keyframes } from 'styled-components';
 
 // import Feature_image from '../img/me.png';
 
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
+import { Row, Col, Button } from 'react-bootstrap';
 
 class Home extends Component {
 	render() {
@@ -74,9 +72,11 @@ class Home extends Component {
 									<h3>Services</h3>
 									<BounceService>
 										<p>
-											<ul style={listStyle}>
-												<li>Website Dev, Android Dev, Consulting & Branding</li>
-											</ul>
+											{/* <ul style={listStyle}> */}
+											<li style={listStyle}>
+												Website Dev, Android Dev, Consulting & Branding
+											</li>
+											{/* </ul> */}
 										</p>
 									</BounceService>
 								</div>

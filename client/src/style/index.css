@@ -194,6 +194,7 @@ a:hover {
 .modal-content {
 	background-color: #ffffff00;
 	text-align: center;
+	border: none;
 }
 
 @media (min-width: 768px) and (max-width: 1029px) {

@@ -44,6 +44,22 @@ body {
 	background-color: #2d2d2d;
 }
 
+.project-details h4,
+.project-details h5 {
+	width: 100%;
+	display: block;
+}
+
+.text-qoute h2 {
+	margin-top: 80px;
+	padding: 50px;
+}
+
+.text-qoute span {
+	opacity: 0.3;
+	width: 100%;
+}
+
 .project-details {
 	padding: 30px;
 	color: #2d2d2d;
@@ -76,4 +92,8 @@ body {
 	font-family: 'Quicksand', sans-serif;
 	display: inline-block;
 	margin-bottom: 3px;
+}
+
+.mela-video {
+	margin-bottom: 30px;
 }

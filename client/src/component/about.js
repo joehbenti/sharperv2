@@ -5,12 +5,29 @@ import { Row, Col, Button, Modal } from 'react-bootstrap';
 
 import Company from './companys';
 
+// Tools logos
 import AdobeXD from '../img/designStack/adobeXD.png';
 import AndroidStudio from '../img/designStack/androidStudio.png';
 import Illustrator from '../img/designStack/illustrator.png';
 import Indesign from '../img/designStack/indesign.png';
 import Intellij from '../img/designStack/intellij.png';
 import Vscode from '../img/designStack/vsCode.png';
+import Photoshop from '../img/designStack/photoshop.png';
+import Cinema4d from '../img/designStack/cinema4d.png';
+import Slack from '../img/designStack/slack.png';
+
+// tech stack images
+import JavascriptImg from '../img/techStack/javascript.png';
+import Html from '../img/techStack/html.png';
+import Css from '../img/techStack/css.png';
+import Bootstrap from '../img/techStack/bootstrap4.png';
+import Git from '../img/techStack/git.png';
+import Jquery from '../img/techStack/jquery.png';
+import Mongo from '../img/techStack/mongoDB.png';
+import Node from '../img/techStack/nodejs.png';
+import Npm from '../img/techStack/npm.png';
+import ReactImg from '../img/techStack/react.png';
+import Sass from '../img/techStack/sass.png';
 
 export default class About extends Component {
 	constructor() {
@@ -87,10 +104,19 @@ export default class About extends Component {
 								<img src={Intellij} alt='ltv' width='100%' />
 							</Col>
 							<Col lg='4' md='4' sm='4' xs='4' className='company-images'>
+								<img src={Photoshop} alt='ltv' width='100%' />
+							</Col>
+							<Col lg='4' md='4' sm='4' xs='4' className='company-images'>
 								<img src={Vscode} alt='ltv' width='100%' />
 							</Col>
 							<Col lg='4' md='4' sm='4' xs='4' className='company-images'>
 								<img src={Indesign} alt='ltv' width='100%' />
+							</Col>
+							<Col lg='4' md='4' sm='4' xs='4' className='company-images'>
+								<img src={Cinema4d} alt='ltv' width='100%' />
+							</Col>
+							<Col lg='4' md='4' sm='4' xs='4' className='company-images'>
+								<img src={Slack} alt='ltv' width='100%' />
 							</Col>
 						</Row>
 					</Modal.Body>
@@ -107,22 +133,37 @@ export default class About extends Component {
 					<Modal.Body>
 						<Row>
 							<Col lg='4' md='4' sm='4' xs='4' className='company-images'>
-								<img src={AdobeXD} alt='ltv' width='100%' />
+								<img src={Bootstrap} alt='ltv' width='100%' />
 							</Col>
 							<Col lg='4' md='4' sm='4' xs='4' className='company-images'>
-								<img src={AndroidStudio} alt='ltv' width='100%' />
+								<img src={Css} alt='ltv' width='100%' />
 							</Col>
 							<Col lg='4' md='4' sm='4' xs='4' className='company-images'>
-								<img src={Illustrator} alt='ltv' width='100%' />
+								<img src={Git} alt='ltv' width='100%' />
 							</Col>
 							<Col lg='4' md='4' sm='4' xs='4' className='company-images'>
-								<img src={Intellij} alt='ltv' width='100%' />
+								<img src={Html} alt='ltv' width='100%' />
 							</Col>
 							<Col lg='4' md='4' sm='4' xs='4' className='company-images'>
-								<img src={Vscode} alt='ltv' width='100%' />
+								<img src={JavascriptImg} alt='ltv' width='100%' />
 							</Col>
 							<Col lg='4' md='4' sm='4' xs='4' className='company-images'>
-								<img src={Indesign} alt='ltv' width='100%' />
+								<img src={Jquery} alt='ltv' width='100%' />
+							</Col>
+							<Col lg='4' md='4' sm='4' xs='4' className='company-images'>
+								<img src={Mongo} alt='ltv' width='100%' />
+							</Col>
+							<Col lg='4' md='4' sm='4' xs='4' className='company-images'>
+								<img src={Node} alt='ltv' width='100%' />
+							</Col>
+							<Col lg='4' md='4' sm='4' xs='4' className='company-images'>
+								<img src={Npm} alt='ltv' width='100%' />
+							</Col>
+							<Col lg='4' md='4' sm='4' xs='4' className='company-images'>
+								<img src={ReactImg} alt='ltv' width='100%' />
+							</Col>
+							<Col lg='4' md='4' sm='4' xs='4' className='company-images'>
+								<img src={Sass} alt='ltv' width='100%' />
 							</Col>
 						</Row>
 					</Modal.Body>

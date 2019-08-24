@@ -61,8 +61,8 @@ export default class Contact extends Component {
 
 						<br />
 						<br />
-						<h4>Follow Me</h4>
-						<Social />
+						<h4>Lets do this. :-)</h4>
+						{/* <Social /> */}
 					</Col>
 
 					<Col lg='6'>

@@ -7,7 +7,7 @@ export default class Social extends Component {
 			<div>
 				<span className='social-media'>
 					<a href='https://twitter.com/jotehbenti' target='_blanck'>
-						<FontAwesome name='twitter' />
+						<FontAwesome name='twitter' size='2x' />
 					</a>
 				</span>
 				<span className='social-media'>
@@ -15,17 +15,17 @@ export default class Social extends Component {
 						href='https://www.facebook.com/sharpercreativestudio'
 						target='_blanck'
 					>
-						<FontAwesome name='facebook' />
+						<FontAwesome name='facebook' size='2x' />
 					</a>
 				</span>
 				<span className='social-media'>
 					<a href='https://www.instagram.com/_jbenti/' target='_blanck'>
-						<FontAwesome name='instagram' />
+						<FontAwesome name='instagram' size='2x' />
 					</a>
 				</span>
 				<span className='social-media'>
 					<a href='https://github.com/joehbenti' target='_blanck'>
-						<FontAwesome name='github' />
+						<FontAwesome name='github' size='2x' />
 					</a>
 				</span>
 			</div>

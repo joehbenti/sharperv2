@@ -30,7 +30,6 @@
 		"express": "^4.17.1",
 		"mongoose": "^5.6.10",
 		"react-animations": "^1.0.0",
-		"react-fontawesome": "^1.6.1",
 		"react-markdown": "^4.1.0",
 		"react-reveal": "^1.2.2",
 		"react-router": "^5.0.1",

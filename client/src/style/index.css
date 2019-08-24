@@ -142,7 +142,8 @@ a:hover {
 }
 
 .social-media span {
-	padding: 4px;
+	padding: 10px;
+	/* background-color: white; */
 	/* display: inline;     */
 }
 

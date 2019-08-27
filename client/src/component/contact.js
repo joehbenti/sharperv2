@@ -5,9 +5,41 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
-import Social from './social';
+// import Social from './social';
 
 export default class Contact extends Component {
+	constructor(props) {
+		super();
+		this.state = {
+			name: '',
+			email: '',
+			option: ''
+		};
+	}
+	inputChange = e => this.setState({ [e.target.name]: e.target.value });
+
+	submit = e => {
+		e.preventDefault();
+		console.log('clicked');
+		fetch('', {
+			method: 'POST',
+			body: JSON.stringify({
+				name: this.state.name,
+				email: this.state.email,
+				option: this.state.option
+			}),
+			headers: {
+				'Content-Type': 'application/json'
+			}
+		}).then(response => {
+			if (response.status === 200) {
+				console.log('it is working');
+			} else {
+				console.log('server error');
+			}
+		});
+	};
+
 	render() {
 		const h1Style = {
 			fontSize: '5em'
@@ -66,23 +98,37 @@ export default class Contact extends Component {
 					</Col>
 
 					<Col lg='6'>
-						<Form>
+						<Form onSubmit={this.submit}>
 							<Form.Control
 								style={formInput}
 								size='lg'
 								type='text'
+								value={this.state.name}
+								name='name'
+								onChange={this.inputChange}
 								placeholder='Whats your name?'
 							/>
 							<Form.Control
 								style={emailInput}
 								type='email'
+								value={this.state.email}
+								onChange={this.inputChange}
+								name='email'
 								placeholder='Where can i reach you @email?'
 							/>
-							<Form.Control as='select' style={dropStyle} size='lg'>
+							<Form.Control
+								as='select'
+								style={dropStyle}
+								size='lg'
+								name='option'
+								value={this.state.option}
+								onChange={this.inputChange}
+							>
 								<option>Love your portfolio. I have a project for you.</option>
 								<option>How much do you charge?</option>
+								<option></option>
 							</Form.Control>
-							<Button size='lg' variant='outline-warning'>
+							<Button size='lg' variant='outline-warning' type='submit'>
 								Send Message
 							</Button>
 						</Form>

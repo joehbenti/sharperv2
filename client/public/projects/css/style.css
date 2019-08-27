@@ -39,6 +39,17 @@ body {
 	padding-bottom: 0%;
 }
 
+.jumbotron-onekoo {
+	background-color: #2d2d2d;
+	color: #ffd000;
+	background-image: url('../images/onekoo.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 20%;
+	padding-bottom: 0%;
+}
+
 .jumbotron-text {
 	padding: 5% 2%;
 	background-color: #2d2d2d;

@@ -4,6 +4,8 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const path = require('path');
 
+const contact = require('./routes/api/contact');
+
 const app = express();
 
 const port = process.env.PORT || 5000;
@@ -18,6 +20,8 @@ mongoose
 	.connect(db, { useNewUrlParser: true })
 	.then(() => console.log('Mongo DB Connected'))
 	.catch(err => console.log(err));
+
+app.use('/api/contact', contact);
 
 // serve static assets if in production
 if (process.env.NODE_ENV === 'production') {

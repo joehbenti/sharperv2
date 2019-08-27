@@ -147,6 +147,14 @@ a:hover {
 	/* display: inline;     */
 }
 
+.social-media a:hover {
+	color: #2d2d2d;
+}
+
+.social-media a {
+	vertical-align: middle;
+}
+
 .project-icons {
 	color: white !important;
 	margin-bottom: 30px;

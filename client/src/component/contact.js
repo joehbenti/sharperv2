@@ -5,40 +5,50 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
+import * as emailjs from 'emailjs-com';
+
 // import Social from './social';
 
 export default class Contact extends Component {
 	constructor(props) {
 		super();
 		this.state = {
-			name: '',
 			email: '',
-			option: ''
+			subject: '',
+			message: ''
 		};
 	}
 	inputChange = e => this.setState({ [e.target.name]: e.target.value });
 
 	submit = e => {
 		e.preventDefault();
-		console.log('clicked');
-		fetch('', {
-			method: 'POST',
-			body: JSON.stringify({
-				name: this.state.name,
-				email: this.state.email,
-				option: this.state.option
-			}),
-			headers: {
-				'Content-Type': 'application/json'
-			}
-		}).then(response => {
-			if (response.status === 200) {
-				console.log('it is working');
-			} else {
-				console.log('server error');
-			}
-		});
+
+		const { email, subject, message } = this.state;
+
+		let templateParams = {
+			from_name: email,
+			to_name: 'joehbenti@gmail.com',
+			subject: subject,
+			message_html: message
+		};
+
+		emailjs.send(
+			'gmail',
+			'template_G1aEguEA',
+			templateParams,
+			'user_FhN21AI3o0hivH6honAzo'
+		);
+
+		this.resetForm();
 	};
+
+	resetForm() {
+		this.setState({
+			email: '',
+			subject: '',
+			message: ''
+		});
+	}
 
 	render() {
 		const h1Style = {
@@ -71,13 +81,13 @@ export default class Contact extends Component {
 			fontSize: '1.2em'
 		};
 
-		const dropStyle = {
-			marginBottom: '50px',
-			width: 'fit-content',
-			background: 'none',
-			border: 'none',
-			borderBottom: '1px solid #ffd000'
-		};
+		// const dropStyle = {
+		// 	marginBottom: '50px',
+		// 	width: 'fit-content',
+		// 	background: 'none',
+		// 	border: 'none',
+		// 	borderBottom: '1px solid #ffd000'
+		// };
 
 		return (
 			<div className='parent-container'>
@@ -103,10 +113,10 @@ export default class Contact extends Component {
 								style={formInput}
 								size='lg'
 								type='text'
-								value={this.state.name}
-								name='name'
+								value={this.state.subject}
+								name='subject'
 								onChange={this.inputChange}
-								placeholder='Whats your name?'
+								placeholder='Subject'
 							/>
 							<Form.Control
 								style={emailInput}
@@ -117,17 +127,14 @@ export default class Contact extends Component {
 								placeholder='Where can i reach you @email?'
 							/>
 							<Form.Control
-								as='select'
-								style={dropStyle}
-								size='lg'
-								name='option'
-								value={this.state.option}
+								style={emailInput}
+								as='textarea'
+								rows='5'
+								value={this.state.message}
 								onChange={this.inputChange}
-							>
-								<option>Love your portfolio. I have a project for you.</option>
-								<option>How much do you charge?</option>
-								<option></option>
-							</Form.Control>
+								name='message'
+								placeholder='Your message here'
+							/>
 							<Button size='lg' variant='outline-warning' type='submit'>
 								Send Message
 							</Button>

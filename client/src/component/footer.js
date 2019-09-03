@@ -12,7 +12,7 @@ class Footer extends Component {
 	render() {
 		const padding = {
 			padding: '22px'
-		}
+		};
 		return (
 			<footer style={padding}>
 				<Row>

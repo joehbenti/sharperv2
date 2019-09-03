@@ -52,7 +52,7 @@ export default class About extends Component {
 		const h3Style = {
 			fontFamily: 'Quicksand',
 			fontSize: '2.5em',
-			color: '#707070',
+			color: '#bdbdbd',
 			cursor: 'context-menu'
 		};
 

@@ -6,7 +6,7 @@ export default class Social extends Component {
 		return (
 			<div>
 				<span className='social-media'>
-					<a href='https://twitter.com/jotehbenti' target='_blanck'>
+					<a href='https://twitter.com/_jbenti' target='_blanck'>
 						<FontAwesome name='twitter' size='2x' />
 						Twitter
 					</a>

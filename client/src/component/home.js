@@ -18,7 +18,7 @@ class Home extends Component {
 		const h3Style = {
 			fontFamily: 'Quicksand',
 			fontSize: '3em',
-			color: '#707070',
+			color: 'white',
 			marginBottom: '60px'
 		};
 
@@ -34,7 +34,7 @@ class Home extends Component {
 		const listStyle = {
 			listStyle: 'none',
 			display: 'inline-block',
-			color: '#707070',
+			color: 'white',
 			fontSize: '1.5em',
 			paddingLeft: '0'
 		};

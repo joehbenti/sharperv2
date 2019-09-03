@@ -58,7 +58,7 @@ export default class Contact extends Component {
 		const h3Style = {
 			fontFamily: 'Quicksand',
 			fontSize: '3em',
-			color: '#707070'
+			color: '#bdbdbd'
 		};
 
 		const formInput = {

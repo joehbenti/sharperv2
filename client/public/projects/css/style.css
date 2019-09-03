@@ -108,3 +108,16 @@ body {
 .mela-video {
 	margin-bottom: 30px;
 }
+
+.project-btn a {
+	padding: 30px;
+	margin: 10px;
+	background-color: #2d2d2d;
+	color: white;
+}
+
+.project-btn a:hover {
+	color: #2d2d2d;
+	background-color: #ffd000;
+	text-decoration: none;
+}

@@ -121,3 +121,7 @@ body {
 	background-color: #ffd000;
 	text-decoration: none;
 }
+
+.project-btn img {
+	max-height: 350px;
+}

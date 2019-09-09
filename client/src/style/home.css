@@ -5,3 +5,33 @@
 	min-height: 90vh;
 	padding: 15px;
 }
+
+.h1Style {
+	font-size: 4em;
+}
+
+.h3Style {
+	font-family: 'Quicksand';
+	font-size: 3em;
+	color: white;
+	margin-bottom: 60px;
+}
+
+.mainText {
+	color: #ffd000;
+	font-family: 'Indie Flower';
+}
+
+.listStyle {
+	list-style: none;
+	display: inline-block;
+	font-size: 1.5em;
+	padding-top: 10px;
+}
+
+.services {
+	/* padding: 10px; */
+	margin-right: 20px;
+	/* border: 1px solid #ffd000; */
+	/* border-radius: 20px; */
+}

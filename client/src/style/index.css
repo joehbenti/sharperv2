@@ -226,7 +226,11 @@ a:hover {
 	}
 }
 
-@media (min-width: 317px) and (max-width: 424px) {
+@media (min-width: 0px) and (max-width: 424px) {
+	.mebg {
+		background-size: cover;
+		background-position: center;
+	}
 	.about-tools {
 		margin-bottom: 50px;
 	}

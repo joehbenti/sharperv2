@@ -129,8 +129,14 @@ a:hover {
 .work-mian-container > div {
 	transition: transform 1s;
 }
+
 .work-mian-container > div:hover {
 	transform: scale(1.05);
+	background-color: #ffd000;
+}
+
+.work-mian-container > div:hover h1 {
+	color: #2d2d2d !important;
 }
 
 .mebg {

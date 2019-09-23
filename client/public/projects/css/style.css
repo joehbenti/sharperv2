@@ -125,3 +125,24 @@ body {
 .project-btn img {
 	max-height: 350px;
 }
+
+@media (min-width: 768px) and (max-width: 1029px) {
+	.project-btn a {
+		padding: 10px;
+		margin-top: 20px;
+	}
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+	.project-btn a {
+		padding: 10px;
+		margin-top: 20px;
+	}
+}
+
+@media (min-width: 0px) and (max-width: 424px) {
+	.project-btn a {
+		padding: 10px;
+		margin-top: 20px;
+	}
+}

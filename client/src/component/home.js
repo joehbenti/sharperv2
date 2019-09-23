@@ -49,6 +49,7 @@ class Home extends Component {
 												<span className='services'>Branding</span>
 												<span className='services'>Web/Mobile Dev</span>
 												<span className='services'>Graphics Design</span>
+												<span className='services'>Social Media Management</span>
 											</li>
 											{/* </ul> */}
 										</p>

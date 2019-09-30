@@ -244,3 +244,13 @@ a:hover {
 		min-width: 90%;
 	}
 }
+
+body::-webkit-scrollbar {
+	width: 1em;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: #ffd000;
+	border-radius: 10px;
+	/* outline: 1px solid slategrey; */
+}

@@ -10,6 +10,10 @@ import styled, { keyframes } from 'styled-components';
 import { Row, Col, Button } from 'react-bootstrap';
 
 class Home extends Component {
+	componentWillMount() {
+		// reveals the website - with animation
+	}
+
 	render() {
 		const paddingDiv = {
 			marginTop: '50px'
@@ -49,7 +53,9 @@ class Home extends Component {
 												<span className='services'>Branding</span>
 												<span className='services'>Web/Mobile Dev</span>
 												<span className='services'>Graphics Design</span>
-												<span className='services'>Social Media Management</span>
+												<span className='services'>
+													Social Media Management
+												</span>
 											</li>
 											{/* </ul> */}
 										</p>

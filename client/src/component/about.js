@@ -204,7 +204,7 @@ export default class About extends Component {
 									<br />
 									<br />
 									When I am not developing experiences, <br />I am usually @ the{' '}
-									<span style={mainText}>gym & reading.</span>
+									<span style={mainText}>gym or reading something.</span>
 								</h3>
 							</div>
 						</Col>

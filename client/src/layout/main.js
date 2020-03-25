@@ -9,9 +9,8 @@ export default class Main extends Component {
 			<React.Fragment>
 				<div className='container-fluid custom-body'>
 					<Routes />
-
-					<Footer />
 				</div>
+				<Footer />
 			</React.Fragment>
 		);
 	}

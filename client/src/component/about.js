@@ -191,7 +191,7 @@ export default class About extends Component {
 						<Col lg='6'>
 							<div>
 								<h3 style={h3Style}>
-									I am a self-motivated self-thought full-time{' '}
+									I am a self-motivated self-taught full-time{' '}
 									<span style={mainText}> UI/UX designer</span> at Kifiya
 									Financial Technology living and working out of Addis Ababa,
 									Ethiopia. Currently I am working on a{' '}

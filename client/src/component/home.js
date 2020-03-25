@@ -39,7 +39,7 @@ class Home extends Component {
 								<br />
 								<br />
 								<h3 className='h3Style'>
-									I am a pro-active self-thought{' '}
+									I am a pro-active self-taught{' '}
 									<span className='mainText'>multi-disciplinary</span> designer
 									with a focus for{' '}
 									<span className='mainText'>human centered design.</span>{' '}
@@ -64,9 +64,9 @@ class Home extends Component {
 								<div style={paddingDiv}>
 									<Button variant='outline-warning' size='lg'>
 										<Link to='/contact' className='contactLink'>
-											<span role='img' arial-role='click me'>
+											{/* <span role='img' arial-role='click me'>
 												👉
-											</span>{' '}
+											</span>{' '} */}
 											Let's work together
 										</Link>
 									</Button>

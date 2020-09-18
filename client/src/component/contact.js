@@ -15,12 +15,12 @@ export default class Contact extends Component {
 		this.state = {
 			email: '',
 			subject: '',
-			message: ''
+			message: '',
 		};
 	}
-	inputChange = e => this.setState({ [e.target.name]: e.target.value });
+	inputChange = (e) => this.setState({ [e.target.name]: e.target.value });
 
-	submit = e => {
+	submit = (e) => {
 		e.preventDefault();
 
 		const { email, subject, message } = this.state;
@@ -29,7 +29,7 @@ export default class Contact extends Component {
 			from_name: email,
 			to_name: 'joehbenti@gmail.com',
 			subject: subject,
-			message_html: message
+			message_html: message,
 		};
 
 		emailjs.send(
@@ -46,19 +46,19 @@ export default class Contact extends Component {
 		this.setState({
 			email: '',
 			subject: '',
-			message: ''
+			message: '',
 		});
 	}
 
 	render() {
 		const h1Style = {
-			fontSize: '5em'
+			fontSize: '5em',
 		};
 
 		const h3Style = {
 			fontFamily: 'Quicksand',
 			fontSize: '3em',
-			color: '#bdbdbd'
+			color: '#bdbdbd',
 		};
 
 		const formInput = {
@@ -68,7 +68,7 @@ export default class Contact extends Component {
 			border: 'none',
 			borderBottom: '1px solid #ffd000',
 			color: 'white',
-			fontSize: '1.2em'
+			fontSize: '1.2em',
 		};
 
 		const emailInput = {
@@ -78,7 +78,7 @@ export default class Contact extends Component {
 			border: 'none',
 			borderBottom: '1px solid #ffd000',
 			color: 'white',
-			fontSize: '1.2em'
+			fontSize: '1.2em',
 		};
 
 		// const dropStyle = {
@@ -97,8 +97,9 @@ export default class Contact extends Component {
 						<br />
 						<br />
 						<h3 style={h3Style}>
-							Do you have an awesome idea which you want to bring it to life.
-							Then holla at me. <br /> I love to hear from you.{' '}
+							Do you have an awesome idea which you want to bring it to life. I
+							love to work on new & exciting ideas.
+							<br />{' '}
 						</h3>
 
 						<br />

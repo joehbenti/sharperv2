@@ -34,38 +34,38 @@ export default class About extends Component {
 		super();
 		this.state = {
 			toolsModal: false,
-			techStackModal: false
+			techStackModal: false,
 		};
 	}
 
 	render() {
 		const padding = {
 			padding: '20px',
-			marginTop: '40px'
+			marginTop: '40px',
 		};
 
 		const h1Style = {
 			fontSize: '3em',
-			display: 'inline-block'
+			display: 'inline-block',
 		};
 
 		const h3Style = {
 			fontFamily: 'Quicksand',
 			fontSize: '2.5em',
 			color: '#bdbdbd',
-			cursor: 'context-menu'
+			cursor: 'context-menu',
 		};
 
 		const mainText = {
 			color: '#FFD000',
-			fontFamily: 'Indie Flower'
+			fontFamily: 'Indie Flower',
 		};
 
 		const marginBottom = {
-			marginBottom: '6%'
+			marginBottom: '6%',
 		};
 		const marginBtn = {
-			marginRight: '10px'
+			marginRight: '10px',
 		};
 
 		const tools = () => {
@@ -178,10 +178,10 @@ export default class About extends Component {
 								style={marginBtn}
 								onClick={tools}
 							>
-								Tools I use
+								Tools
 							</Button>
 							<Button variant='outline-light' size='lg' onClick={techstack}>
-								Design/Tech Stack
+								Tech Stack
 							</Button>
 						</div>
 					</div>
@@ -191,20 +191,22 @@ export default class About extends Component {
 						<Col lg='6'>
 							<div>
 								<h3 style={h3Style}>
-									I am a self-motivated self-taught full-time{' '}
-									<span style={mainText}> UI/UX designer</span> at Kifiya
-									Financial Technology living and working out of Addis Ababa,
-									Ethiopia. Currently I am working on a{' '}
-									<span style={mainText}>first-of-its-kind e-commerce </span>
-									and <span style={mainText}>payment solution,</span> guiding
-									the team on delivering an exceptional digital product. <br />
-									<br />I am passionate to create an unforgettable experience
-									digitally and in real life; after all that’s what life is. -{' '}
-									<span style={mainText}>GREAT EXPERIENCE</span>
+									My Name is Jote Hailu. I am a self-motivated self-taught{' '}
+									<span style={mainText}>
+										{' '}
+										UI/UX obsessed front-end developer and designer
+									</span>{' '}
+									here in Addis Ababa/ Finfinne who loves working out and
+									reading books especially non-fiction and autobiographies.{' '}
+									<span style={mainText}>
+										Currently I am working as CTO at Elnet Technology.
+									</span>{' '}
+									<br />
+									<br />I am very passionate to solve problem and create
+									experiences using technologies, after all that’s what life is
+									- <span style={mainText}>GREAT EXPERIENCE</span>
 									<br />
 									<br />
-									When I am not developing experiences, <br />I am usually @ the{' '}
-									<span style={mainText}>gym or reading something.</span>
 								</h3>
 							</div>
 						</Col>

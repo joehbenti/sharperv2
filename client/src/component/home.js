@@ -16,7 +16,7 @@ class Home extends Component {
 
 	render() {
 		const paddingDiv = {
-			marginTop: '50px'
+			marginTop: '50px',
 		};
 
 		const BounceLeft = styled.div`
@@ -41,7 +41,7 @@ class Home extends Component {
 								<h3 className='h3Style'>
 									I am a pro-active self-taught{' '}
 									<span className='mainText'>multi-disciplinary</span> designer
-									with a focus for{' '}
+									with a focus on{' '}
 									<span className='mainText'>human centered design.</span>{' '}
 								</h3>
 								<div>

@@ -13,7 +13,7 @@ import Home from '../component/home';
 import Contact from '../component/contact';
 import About from '../component/about';
 import Work from '../component/work';
-import Blog from '../component/blog';
+// import Blog from '../component/blog';
 
 export default class Routes extends Component {
 	render() {
@@ -21,15 +21,14 @@ export default class Routes extends Component {
 			<Router>
 				<Navbar expand='lg' collapseOnSelect>
 					<Navbar.Brand>
-						<img
-							src={Logo}
-							width='80'
-							height='80'
-							alt='Logo'
-							className='brand-img'
-						/>{' '}
 						<Link to='/' className='brand-name'>
-							Joe H. Benti
+							<img
+								src={Logo}
+								width='80'
+								height='80'
+								alt='Logo'
+								className='brand-img'
+							/>{' '}
 						</Link>
 					</Navbar.Brand>
 					<Navbar.Toggle aria-controls='basic-navbar-nav' />
@@ -46,9 +45,9 @@ export default class Routes extends Component {
 							<Link to='/contact' className='nav nav-link'>
 								Contact
 							</Link>
-							<Link to='/blog' className='nav nav-link'>
+							{/* <Link to='/blog' className='nav nav-link'>
 								Blog
-							</Link>
+							</Link> */}
 							<a
 								href={Resume}
 								target='_blank'
@@ -65,7 +64,7 @@ export default class Routes extends Component {
 					<Route path='/contact' component={Contact} />
 					<Route path='/about' component={About} />
 					<Route path='/work' component={Work} />
-					<Route path='/blog' component={Blog} />
+					{/* <Route path='/blog' component={Blog} /> */}
 					{/* <Route exact path='work/ltv' component={LtvProject} /> */}
 					{/* <Route component={NotFound} /> */}
 				</Switch>

@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 // import Ltv from '../projects/ltv.html';
 export default class Work extends Component {
 	render() {
+		// TODO: we need to add a scroll effect were when i scroll vertically on this page it needs to scroll horizontally
 		return (
 			<div className='work-mian-container'>
 				<div className='work-project'>
@@ -62,6 +63,21 @@ export default class Work extends Component {
 							/>
 							<div>
 								<h1>St. Giorgis FC </h1>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div className='work-project'>
+					<a href='/projects/fili.html'>
+						<div className='work-relative-container fili-img'>
+							<img
+								src='https://image.flaticon.com/icons/svg/977/977411.svg'
+								alt='Branding, Packaging'
+								width='50px'
+								className='project-icons'
+							/>
+							<div>
+								<h1>Fili Coffee</h1>
 							</div>
 						</div>
 					</a>

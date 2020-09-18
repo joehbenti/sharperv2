@@ -73,10 +73,11 @@
 		crossorigin="anonymous"
 	></script>
 	<script>
-		jQuery(function($) {
-			$.fn.hScroll = function(amount) {
+
+		jQuery(function ($) {
+			$.fn.hScroll = function (amount) {
 				amount = amount || 120;
-				$(this).bind('DOMMouseScroll mousewheel', function(event) {
+				$(this).bind('DOMMouseScroll mousewheel', function (event) {
 					var oEvent = event.originalEvent,
 						direction = oEvent.detail
 							? oEvent.detail * -amount
@@ -91,7 +92,7 @@
 	</script>
 
 	<script>
-		$(document).ready(function() {
+		$(document).ready(function () {
 			$('#work-mian-container').hScroll(60); // You can pass (optionally) scrolling amount
 		});
 	</script>

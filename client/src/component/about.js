@@ -196,10 +196,10 @@ export default class About extends Component {
 										{' '}
 										UI/UX obsessed front-end developer and designer
 									</span>{' '}
-									here in Addis Ababa/ Finfinne who loves working out and
+									here in Addis Ababa/Finfinne who loves working out and
 									reading books especially non-fiction and autobiographies.{' '}
 									<span style={mainText}>
-										Currently I am working as CTO at Elnet Technology.
+										Currently I am working as CTO.
 									</span>{' '}
 									<br />
 									<br />I am very passionate to solve problem and create

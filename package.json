@@ -1,7 +1,6 @@
 {
 	"name": "sharperv2",
 	"version": "1.0.0",
-	
 	"description": "updated sharper website",
 	"main": "index.js",
 	"scripts": {

@@ -34,7 +34,7 @@ class Home extends Component {
 						<Row>
 							<Col lg='7'>
 								<h1 className='h1Style'>
-									Front-End Developer <br /> & Brand Consultant
+									Front-End Developer, UI/UX Designer& Brand Consultant
 								</h1>
 								<br />
 								<br />

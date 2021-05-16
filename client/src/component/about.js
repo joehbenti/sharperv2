@@ -191,20 +191,18 @@ export default class About extends Component {
 						<Col lg='6'>
 							<div>
 								<h3 style={h3Style}>
-									My Name is Jote Hailu. I am a self-motivated self-taught{' '}
+									My Name is Joe. I am a self-motivated self-taught{' '}
 									<span style={mainText}>
 										{' '}
 										UI/UX obsessed front-end developer and designer
 									</span>{' '}
-									here in Addis Ababa/Finfinne who loves working out and
+									here in Addis Ababa who loves working out and
 									reading books especially non-fiction and autobiographies.{' '}
 									<span style={mainText}>
-										Currently I am working as CTO.
+										Previously I was working as a CTO for a startup. Now am a freelancer looking for work.
 									</span>{' '}
 									<br />
-									<br />I am very passionate to solve problem and create
-									experiences using technologies, after all that’s what life is
-									- <span style={mainText}>GREAT EXPERIENCE</span>
+									
 									<br />
 									<br />
 								</h3>

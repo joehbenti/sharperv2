@@ -67,7 +67,7 @@ export default class Work extends Component {
 						</div>
 					</a>
 				</div>
-				<div className='work-project'>
+				{/* <div className='work-project'>
 					<a href='/projects/fili.html'>
 						<div className='work-relative-container fili-img'>
 							<img
@@ -81,7 +81,7 @@ export default class Work extends Component {
 							</div>
 						</div>
 					</a>
-				</div>
+				</div> */}
 			</div>
 		);
 	}

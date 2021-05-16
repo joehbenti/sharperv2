@@ -199,7 +199,7 @@ export default class About extends Component {
 									here in Addis Ababa who loves working out and
 									reading books especially non-fiction and autobiographies.{' '}
 									<span style={mainText}>
-										Previously I was working as a CTO for a startup. Now am a freelancer looking for work.
+										Previously I was working as a CTO/CIO for a startup. Now am a freelancer looking for work.
 									</span>{' '}
 									<br />
 									

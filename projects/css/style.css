@@ -1,0 +1,159 @@
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: white;
+	font-family: 'DM Serif Display', serif;
+	margin-bottom: 5%;
+}
+
+.jumbotron-ltv {
+	background-color: #2d2d2d;
+	color: #ffd000;
+	background-image: url('../images/ltv-banner.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 20%;
+	padding-bottom: 0%;
+}
+
+.jumbotron-giorgis {
+	background-color: #2d2d2d;
+	color: #ffd000;
+	background-image: url('../images/giorgis.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 20%;
+	padding-bottom: 0%;
+}
+
+.jumbotron-mela {
+	background-color: #2d2d2d;
+	color: #ffd000;
+	background-image: url('../images/mela.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 20%;
+	padding-bottom: 0%;
+}
+
+.jumbotron-onekoo {
+	background-color: #2d2d2d;
+	color: #ffd000;
+	background-image: url('../images/onekoo.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 20%;
+	padding-bottom: 0%;
+}
+
+.jumbotron-text {
+	padding: 5% 2%;
+	background-color: #2d2d2d;
+}
+
+.project-details h4,
+.project-details h5 {
+	width: 100%;
+	display: block;
+}
+
+.text-qoute h2 {
+	margin-top: 80px;
+	padding: 50px;
+}
+
+.text-qoute span {
+	opacity: 0.3;
+	width: 100%;
+}
+
+.project-details {
+	padding: 30px;
+	color: #2d2d2d;
+	margin-bottom: 30px;
+}
+
+.project-details p {
+	font-family: 'Quicksand', sans-serif;
+}
+
+.project-details h4 {
+	margin: 30px 0px;
+}
+
+.space-divs {
+	margin-bottom: 50px;
+}
+
+.project-services > div {
+	margin-top: 30px;
+}
+
+.project-services > div > span {
+	font-family: 'Quicksand', sans-serif;
+}
+
+.project-services > span {
+	padding: 10px;
+	background: #f2f2f2;
+	font-family: 'Quicksand', sans-serif;
+	display: inline-block;
+	margin-bottom: 3px;
+}
+
+.mela-video {
+	margin-bottom: 30px;
+}
+
+.project-btn a {
+	padding: 30px;
+	margin: 10px;
+	background-color: #2d2d2d;
+	color: white;
+}
+
+.project-btn a:hover {
+	color: #2d2d2d;
+	background-color: #ffd000;
+	text-decoration: none;
+}
+
+.project-btn img {
+	max-height: 350px;
+}
+
+@media (min-width: 768px) and (max-width: 1029px) {
+	.project-btn a {
+		padding: 10px;
+		margin-top: 20px;
+	}
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+	.project-btn a {
+		padding: 10px;
+		margin-top: 20px;
+	}
+}
+
+@media (min-width: 0px) and (max-width: 424px) {
+	.project-btn a {
+		padding: 10px;
+		margin-top: 20px;
+	}
+}
+
+/* styling the scrollbar */
+body::-webkit-scrollbar {
+	width: 1em;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: #ffd000;
+	border-radius: 10px;
+	/* outline: 1px solid slategrey; */
+}
